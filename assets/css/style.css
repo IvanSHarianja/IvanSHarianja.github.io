@@ -251,6 +251,50 @@ footer {
   font-size: 0.85rem;
 }
 
+/* Statistik hero */
+.stat-number {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--brand);
+  font-variant-numeric: tabular-nums; /* lebar digit tetap → angka tidak "goyang" saat counter berjalan */
+}
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Garis progres timeline (diisi oleh animasi saat scroll) */
+.timeline {
+  position: relative;
+}
+.timeline-line {
+  display: none;
+  position: absolute;
+  left: -2px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--brand);
+  transform-origin: top;
+}
+
+/* Animasi — hanya aktif bila <html class="js-anim"> (JS jalan + reduced motion tidak aktif).
+   Tanpa class ini semua konten langsung terlihat. */
+.js-anim [data-anim],
+.js-anim .hero .eyebrow,
+.js-anim .hero-photo,
+.js-anim [data-anim-group] .chip {
+  opacity: 0;
+}
+.js-anim .hero h1 {
+  visibility: hidden;
+}
+.js-anim .timeline-line {
+  display: block;
+  transform: scaleY(0);
+}
+
 /* Aksesibilitas: fokus keyboard selalu terlihat */
 a:focus-visible,
 button:focus-visible {

@@ -12,6 +12,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+  <script>
+    // Aktifkan mode animasi sebelum halaman dirender (mencegah konten "berkedip").
+    // Dilewati bila pengguna meminta gerakan minimal di pengaturan sistemnya.
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim')
+      // Pengaman: bila skrip animasi gagal dimuat dalam 3 detik, tampilkan semua konten.
+      setTimeout(function () {
+        if (!window.__animReady) document.documentElement.classList.remove('js-anim')
+      }, 3000)
+    }
+  </script>
 </head>
 <body>
 
@@ -43,12 +54,12 @@
           <div class="col-lg-8 order-2 order-lg-1">
             <span class="eyebrow mb-3">IT Staff · Business Systems &amp; Web Developer</span>
             <h1 class="mb-3">Halo, saya Ivan S. Harianja.</h1>
-            <p class="lead mb-4">
+            <p class="lead mb-4" data-anim="hero">
               Saya membangun sistem bisnis internal dari kebutuhan pengguna sampai dipakai sehari-hari —
               dari LMS yang digunakan sekitar 150 karyawan hingga sistem operasional dan keuangan alat berat.
               Lulusan S1 Informatika Universitas Diponegoro, kini memperdalam frontend dengan JavaScript dan React.
             </p>
-            <div class="d-flex flex-wrap gap-2">
+            <div class="d-flex flex-wrap gap-2" data-anim="hero">
               <a class="btn btn-brand px-4" href="#proyek"><i class="bi bi-grid me-1"></i> Lihat Proyek</a>
               <a class="btn btn-outline-brand px-4" href="https://github.com/IvanSHarianja" target="_blank" rel="noopener">
                 <i class="bi bi-github me-1"></i> GitHub
@@ -56,6 +67,20 @@
               <a class="btn btn-outline-secondary px-4" href="assets/cv-ivan-s-harianja.pdf" target="_blank" rel="noopener">
                 <i class="bi bi-file-earmark-person me-1"></i> CV
               </a>
+            </div>
+            <div class="d-flex flex-wrap gap-4 gap-md-5 mt-4" data-anim="hero">
+              <div>
+                <div class="stat-number" data-count="150" data-prefix="±">±150</div>
+                <div class="stat-label">karyawan memakai LMS</div>
+              </div>
+              <div>
+                <div class="stat-number" data-count="5">5</div>
+                <div class="stat-label">sistem dibangun</div>
+              </div>
+              <div>
+                <div class="stat-number" data-count="3.56" data-decimals="2">3,56</div>
+                <div class="stat-label">IPK S1 Informatika</div>
+              </div>
             </div>
           </div>
           <div class="col-lg-4 order-1 order-lg-2 text-center">
@@ -70,7 +95,7 @@
     <!-- ============ TENTANG ============ -->
     <section id="tentang">
       <div class="container">
-        <div class="row g-4 align-items-center">
+        <div class="row g-4 align-items-center" data-anim="reveal">
           <div class="col-lg-5">
             <h2 class="section-title mb-3">Tentang Saya</h2>
             <p class="section-subtitle mb-0">
@@ -97,9 +122,9 @@
     <!-- ============ KEAHLIAN ============ -->
     <section id="keahlian" class="pt-0">
       <div class="container">
-        <h2 class="section-title mb-4">Keahlian</h2>
-        <div class="row g-3">
-          <div class="col-md-6 col-lg-4">
+        <h2 class="section-title mb-4" data-anim="reveal">Keahlian</h2>
+        <div class="row g-3" data-anim-group>
+          <div class="col-md-6 col-lg-4" data-anim="item">
             <div class="card-soft p-4 h-100 skill-group">
               <h3><i class="bi bi-window me-2"></i>Frontend</h3>
               <span class="chip chip-strong">JavaScript</span>
@@ -108,10 +133,11 @@
               <span class="chip">Bootstrap</span>
               <span class="chip">Tailwind CSS</span>
               <span class="chip">Blade</span>
+              <span class="chip">Anime.js</span>
               <span class="chip">React (sedang didalami)</span>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-anim="item">
             <div class="card-soft p-4 h-100 skill-group">
               <h3><i class="bi bi-hdd-stack me-2"></i>Backend</h3>
               <span class="chip chip-strong">PHP</span>
@@ -121,7 +147,7 @@
               <span class="chip">TypeScript (ElysiaJS)</span>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-anim="item">
             <div class="card-soft p-4 h-100 skill-group">
               <h3><i class="bi bi-database me-2"></i>Database</h3>
               <span class="chip chip-strong">MySQL</span>
@@ -130,7 +156,7 @@
               <span class="chip">Desain database relasional</span>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-anim="item">
             <div class="card-soft p-4 h-100 skill-group">
               <h3><i class="bi bi-diagram-3 me-2"></i>Sistem Bisnis</h3>
               <span class="chip chip-strong">Google Sheets</span>
@@ -139,7 +165,7 @@
               <span class="chip">Dashboard monitoring</span>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-anim="item">
             <div class="card-soft p-4 h-100 skill-group">
               <h3><i class="bi bi-people me-2"></i>Praktik Kerja</h3>
               <span class="chip">Requirements gathering</span>
@@ -149,7 +175,7 @@
               <span class="chip">ICONIX</span>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-anim="item">
             <div class="card-soft p-4 h-100 skill-group">
               <h3><i class="bi bi-tools me-2"></i>Tools</h3>
               <span class="chip chip-strong">Git &amp; GitHub</span>
@@ -165,14 +191,14 @@
     <!-- ============ PROYEK ============ -->
     <section id="proyek" class="pt-0">
       <div class="container">
-        <h2 class="section-title mb-2">Proyek</h2>
-        <p class="section-subtitle mb-4">
+        <h2 class="section-title mb-2" data-anim="reveal">Proyek</h2>
+        <p class="section-subtitle mb-4" data-anim="reveal">
           Proyek perusahaan dan klien ditampilkan sebagai studi kasus dengan data contoh,
           karena kode dan datanya bukan milik saya pribadi.
         </p>
 
         <!-- Proyek 1: MY-TRUCK -->
-        <article class="card-soft project">
+        <article class="card-soft project" data-anim="reveal">
           <div class="row g-0">
             <div class="col-lg-5 project-media">
               <img class="project-shot" src="assets/img/armada.png" loading="lazy"
@@ -236,7 +262,7 @@
         </article>
 
         <!-- Proyek 2: LMS -->
-        <article class="card-soft project">
+        <article class="card-soft project" data-anim="reveal">
           <div class="row g-0">
             <div class="col-lg-5 project-media">
               <img class="project-shot" src="assets/img/lms.png" loading="lazy"
@@ -270,7 +296,7 @@
         </article>
 
         <!-- Proyek 3: Inoutlab -->
-        <article class="card-soft project">
+        <article class="card-soft project" data-anim="reveal">
           <div class="row g-0">
             <div class="col-lg-5 project-media">
               <img class="project-shot" src="assets/img/inoutlab.png" loading="lazy"
@@ -330,7 +356,7 @@
         </article>
 
         <!-- Proyek 4: Tugas Akhir -->
-        <article class="card-soft project">
+        <article class="card-soft project" data-anim="reveal">
           <div class="row g-0">
             <div class="col-lg-5 project-media">
               <img class="project-shot" src="assets/img/pengaduan.png" loading="lazy"
@@ -389,7 +415,7 @@
         </article>
 
         <!-- Proyek 5: Psikotes (tanpa gambar) -->
-        <article class="card-soft project">
+        <article class="card-soft project" data-anim="reveal">
           <div class="p-4 p-lg-5">
             <div class="project-label mb-1">Magang · Biro Psikologi Poros Semarang · Jan – Apr 2024</div>
             <h3 class="mb-2">Aplikasi Tes Psikologi Berbasis Web</h3>
@@ -412,11 +438,12 @@
     <!-- ============ PENGALAMAN ============ -->
     <section id="pengalaman" class="pt-0">
       <div class="container">
-        <h2 class="section-title mb-4">Pengalaman &amp; Pendidikan</h2>
+        <h2 class="section-title mb-4" data-anim="reveal">Pengalaman &amp; Pendidikan</h2>
         <div class="row g-5">
           <div class="col-lg-7">
             <div class="timeline">
-              <div class="timeline-item">
+              <span class="timeline-line" aria-hidden="true"></span>
+              <div class="timeline-item" data-anim="reveal">
                 <div class="period">Okt 2025 — Sekarang</div>
                 <h3 class="h5 fw-bold mb-1">IT Staff · Sapphire Group</h3>
                 <p class="text-muted mb-2">Properti · Tegal, Jawa Tengah</p>
@@ -428,12 +455,12 @@
                   <li>Sedang membangun sistem terintegrasi pabrik kayu yang menghubungkan 7 proses: Marketing, Sales Order, Gudang, Produksi, Logistik, Pembelian, dan Keuangan</li>
                 </ul>
               </div>
-              <div class="timeline-item">
+              <div class="timeline-item" data-anim="reveal">
                 <div class="period">Jan 2025 — Mei 2025</div>
                 <h3 class="h5 fw-bold mb-1">Web Developer (Tugas Akhir) · Polrestabes Semarang</h3>
                 <p class="mb-0 text-muted">Membangun aplikasi pengaduan masyarakat dengan Laravel dan MySQL.</p>
               </div>
-              <div class="timeline-item">
+              <div class="timeline-item" data-anim="reveal">
                 <div class="period">Jan 2024 — Apr 2024</div>
                 <h3 class="h5 fw-bold mb-1">Web Developer (Magang) · Biro Psikologi Poros Semarang</h3>
                 <p class="mb-0 text-muted">Membangun aplikasi tes psikologi daring dengan laporan hasil otomatis.</p>
@@ -441,7 +468,7 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <div class="card-soft p-4 mb-3">
+            <div class="card-soft p-4 mb-3" data-anim="reveal">
               <div class="period small text-muted fw-semibold">Agu 2021 — Jul 2025</div>
               <h3 class="h5 fw-bold mb-1">S1 Informatika · Universitas Diponegoro</h3>
               <p class="mb-2 text-muted">IPK 3,56</p>
@@ -450,7 +477,7 @@
                 menggunakan Proses ICONIX.
               </p>
             </div>
-            <div class="card-soft p-4">
+            <div class="card-soft p-4" data-anim="reveal">
               <h3 class="h6 fw-bold mb-2"><i class="bi bi-award me-1"></i>Sertifikasi</h3>
               <ul class="mb-0 ps-3 small text-muted">
                 <li>Database Programming with PL/SQL — Oracle Academy</li>
@@ -465,7 +492,7 @@
     <!-- ============ KONTAK ============ -->
     <section id="kontak" class="contact">
       <div class="container">
-        <div class="row g-4 align-items-center">
+        <div class="row g-4 align-items-center" data-anim="reveal">
           <div class="col-lg-6">
             <h2 class="section-title mb-2">Mari terhubung</h2>
             <p class="section-subtitle mb-0">Terbuka untuk posisi Frontend / Web Developer.</p>
@@ -485,11 +512,13 @@
 
   <footer class="py-4">
     <div class="container text-center">
-      © 2026 Ivan S. Harianja · Dibangun dengan HTML &amp; Bootstrap 5
+      © 2026 Ivan S. Harianja · Dibangun dengan HTML, Bootstrap 5 &amp; Anime.js
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@4.3.0/dist/bundles/anime.umd.min.js" defer></script>
+  <script src="assets/js/animations.js" defer></script>
   <script>
     // Tutup menu mobile setelah salah satu link diklik.
     document.querySelectorAll('#menu .nav-link, #menu .btn').forEach((link) => {
