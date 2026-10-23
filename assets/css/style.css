@@ -1,0 +1,259 @@
+/* Token desain — ubah warna brand cukup di sini. */
+:root {
+  --brand: #0f766e;
+  --brand-soft: #ccfbf1;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --surface: #ffffff;
+  --bg: #f8fafc;
+  --line: #e2e8f0;
+  --radius: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px; /* supaya judul section tidak tertutup navbar */
+}
+
+body {
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.navbar-brand {
+  font-weight: 800;
+  color: var(--ink);
+}
+.navbar-brand span {
+  color: var(--brand);
+}
+.nav-link {
+  font-weight: 500;
+  color: var(--muted);
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--brand);
+}
+
+/* Tombol brand */
+.btn-brand {
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-bg: #115e59;
+  --bs-btn-hover-border-color: #115e59;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-bg: #134e4a;
+  font-weight: 600;
+}
+.btn-outline-brand {
+  --bs-btn-color: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand);
+  --bs-btn-hover-border-color: var(--brand);
+  --bs-btn-hover-color: #fff;
+  font-weight: 600;
+}
+
+/* Hero */
+.hero {
+  padding: 7rem 0 4rem;
+  background:
+    radial-gradient(circle at 85% 20%, var(--brand-soft), transparent 45%),
+    var(--bg);
+}
+.hero .eyebrow {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+.hero h1 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+}
+.hero .lead {
+  color: var(--muted);
+  max-width: 40rem;
+}
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid var(--surface);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+/* Section umum */
+section {
+  padding: 4.5rem 0;
+}
+.section-title {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+.section-subtitle {
+  color: var(--muted);
+  max-width: 42rem;
+}
+
+/* Kartu */
+.card-soft {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+/* Skill */
+.skill-group h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.chip {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  margin: 0 0.35rem 0.45rem 0;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.chip-strong {
+  background: var(--brand-soft);
+  border-color: transparent;
+  color: var(--brand);
+}
+
+/* Proyek */
+.project {
+  overflow: hidden;
+}
+.project + .project {
+  margin-top: 2rem;
+}
+.project-media {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+}
+@media (min-width: 992px) {
+  .project-media {
+    padding: 2rem;
+    border-bottom: 0;
+    border-right: 1px solid var(--line);
+  }
+}
+.project-shot {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top left; /* screenshot tetap utuh dari pojok kiri atas */
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+.project-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand);
+}
+.project h3 {
+  font-weight: 800;
+}
+.project ul {
+  padding-left: 1.1rem;
+}
+.project li + li {
+  margin-top: 0.25rem;
+}
+.case-study {
+  border-top: 1px dashed var(--line);
+  padding-top: 1rem;
+}
+.case-study h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.note-private {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Timeline pengalaman */
+.timeline {
+  border-left: 2px solid var(--line);
+  padding-left: 1.5rem;
+}
+.timeline-item {
+  position: relative;
+}
+.timeline-item + .timeline-item {
+  margin-top: 2rem;
+}
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 7px);
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 0 4px var(--brand-soft);
+}
+.timeline-item .period {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Kontak & footer */
+.contact {
+  background: var(--ink);
+  color: #e2e8f0;
+}
+.contact .section-subtitle {
+  color: #94a3b8;
+}
+.contact a.contact-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact a.contact-link:hover {
+  color: var(--brand-soft);
+}
+footer {
+  background: var(--ink);
+  color: #64748b;
+  border-top: 1px solid #1e293b;
+  font-size: 0.85rem;
+}
+
+/* Aksesibilitas: fokus keyboard selalu terlihat */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--brand);
+  outline-offset: 2px;
+}

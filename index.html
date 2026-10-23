@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ivan S. Harianja — Web Developer</title>
+  <meta name="description" content="Portofolio Ivan S. Harianja, IT Staff dan web developer (Laravel, Filament, JavaScript) lulusan S1 Informatika Universitas Diponegoro.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#beranda">Ivan<span>.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+              aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pengalaman">Pengalaman</a></li>
+          <li class="nav-item"><a class="btn btn-brand btn-sm px-3 ms-lg-2" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="beranda">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-8 order-2 order-lg-1">
+            <span class="eyebrow mb-3">IT Staff · Business Systems &amp; Web Developer</span>
+            <h1 class="mb-3">Halo, saya Ivan S. Harianja.</h1>
+            <p class="lead mb-4">
+              Saya membangun sistem bisnis internal dari kebutuhan pengguna sampai dipakai sehari-hari —
+              dari LMS yang digunakan sekitar 150 karyawan hingga sistem operasional dan keuangan alat berat.
+              Lulusan S1 Informatika Universitas Diponegoro, kini memperdalam frontend dengan JavaScript dan React.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <a class="btn btn-brand px-4" href="#proyek"><i class="bi bi-grid me-1"></i> Lihat Proyek</a>
+              <a class="btn btn-outline-brand px-4" href="https://github.com/IvanSHarianja" target="_blank" rel="noopener">
+                <i class="bi bi-github me-1"></i> GitHub
+              </a>
+              <a class="btn btn-outline-secondary px-4" href="assets/cv-ivan-s-harianja.pdf" target="_blank" rel="noopener">
+                <i class="bi bi-file-earmark-person me-1"></i> CV
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 order-1 order-lg-2 text-center">
+            <img class="hero-photo" src="assets/img/foto.jpg" alt="Foto Ivan S. Harianja"
+                 onerror="this.onerror=null;this.src='assets/img/placeholder-foto.svg'">
+            <p class="mt-3 mb-0 text-muted small"><i class="bi bi-geo-alt me-1"></i>Tegal, Jawa Tengah</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ TENTANG ============ -->
+    <section id="tentang">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <h2 class="section-title mb-3">Tentang Saya</h2>
+            <p class="section-subtitle mb-0">
+              Developer yang terbiasa memahami proses bisnis sebelum menulis kode.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Sejak Oktober 2025 saya bekerja sebagai <strong>IT Staff di Sapphire Group</strong>, perusahaan
+              properti di Tegal. Saya menjadi PIC sistem internal secara menyeluruh: menggali kebutuhan pengguna,
+              merancang SOP, membangun aplikasi, melatih pengguna, hingga dukungan setelah rilis.
+            </p>
+            <p class="mb-0">
+              Pengalaman membangun sistem dari nol membuat saya terbiasa memikirkan data, alur pengguna,
+              dan kasus yang bisa salah — bukan hanya tampilan. Kini saya memperdalam
+              <strong>JavaScript dan React</strong> agar dapat membangun antarmuka yang cepat, rapi,
+              dan mudah digunakan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KEAHLIAN ============ -->
+    <section id="keahlian" class="pt-0">
+      <div class="container">
+        <h2 class="section-title mb-4">Keahlian</h2>
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <div class="card-soft p-4 h-100 skill-group">
+              <h3><i class="bi bi-window me-2"></i>Frontend</h3>
+              <span class="chip chip-strong">JavaScript</span>
+              <span class="chip chip-strong">HTML</span>
+              <span class="chip chip-strong">CSS</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Blade</span>
+              <span class="chip">React (sedang didalami)</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-soft p-4 h-100 skill-group">
+              <h3><i class="bi bi-hdd-stack me-2"></i>Backend</h3>
+              <span class="chip chip-strong">PHP</span>
+              <span class="chip chip-strong">Laravel</span>
+              <span class="chip chip-strong">Filament</span>
+              <span class="chip">REST API</span>
+              <span class="chip">TypeScript (ElysiaJS)</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-soft p-4 h-100 skill-group">
+              <h3><i class="bi bi-database me-2"></i>Database</h3>
+              <span class="chip chip-strong">MySQL</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">SQL &amp; PL/SQL</span>
+              <span class="chip">Desain database relasional</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-soft p-4 h-100 skill-group">
+              <h3><i class="bi bi-diagram-3 me-2"></i>Sistem Bisnis</h3>
+              <span class="chip chip-strong">Google Sheets</span>
+              <span class="chip chip-strong">Google Apps Script</span>
+              <span class="chip">Digitalisasi SOP &amp; alur kerja</span>
+              <span class="chip">Dashboard monitoring</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-soft p-4 h-100 skill-group">
+              <h3><i class="bi bi-people me-2"></i>Praktik Kerja</h3>
+              <span class="chip">Requirements gathering</span>
+              <span class="chip">User acceptance testing</span>
+              <span class="chip">Role-based access control</span>
+              <span class="chip">Pelatihan pengguna</span>
+              <span class="chip">ICONIX</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-soft p-4 h-100 skill-group">
+              <h3><i class="bi bi-tools me-2"></i>Tools</h3>
+              <span class="chip chip-strong">Git &amp; GitHub</span>
+              <span class="chip">Postman</span>
+              <span class="chip">Laragon</span>
+              <span class="chip">Vite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROYEK ============ -->
+    <section id="proyek" class="pt-0">
+      <div class="container">
+        <h2 class="section-title mb-2">Proyek</h2>
+        <p class="section-subtitle mb-4">
+          Proyek perusahaan dan klien ditampilkan sebagai studi kasus dengan data contoh,
+          karena kode dan datanya bukan milik saya pribadi.
+        </p>
+
+        <!-- Proyek 1: MY-TRUCK -->
+        <article class="card-soft project">
+          <div class="row g-0">
+            <div class="col-lg-5 project-media">
+              <img class="project-shot" src="assets/img/armada.png" loading="lazy"
+                   alt="Dashboard MY-TRUCK dengan data contoh PT Maju Terus"
+                   onerror="this.onerror=null;this.src='assets/img/placeholder-proyek.svg'">
+            </div>
+            <div class="col-lg-7">
+              <div class="p-4 p-lg-5">
+                <div class="project-label mb-1">Pekerjaan · Sapphire Group · Jun 2026 – sekarang</div>
+                <h3 class="mb-2">MY-TRUCK — Sistem Operasional &amp; Keuangan Alat Berat</h3>
+                <p class="text-muted">
+                  Memindahkan penjualan material, sewa alat berat, kontrak armada, proyek borongan,
+                  dan laporan keuangan dari catatan Excel manual ke satu sistem untuk beberapa PT.
+                </p>
+                <div class="mb-3">
+                  <span class="chip">Laravel</span>
+                  <span class="chip">Filament</span>
+                  <span class="chip">Livewire</span>
+                  <span class="chip">Tailwind CSS</span>
+                  <span class="chip">MySQL</span>
+                  <span class="chip chip-strong">Tahap UAT menjelang go-live</span>
+                </div>
+                <ul class="mb-3">
+                  <li>Hak akses per peran (Admin, Accountant, Owner) sehingga tiap peran hanya melihat transaksi dan laporan yang dibutuhkan</li>
+                  <li>Multi-perusahaan: data tiap PT terpisah dalam satu aplikasi</li>
+                  <li>Jurnal otomatis dari transaksi operasional (invoice, pembayaran, penjualan material)</li>
+                  <li>Laporan neraca, laba rugi per lini usaha, arus kas, perubahan ekuitas, dan neraca saldo — dapat diekspor ke PDF</li>
+                  <li>Persediaan material dengan harga pokok rata-rata bergerak (moving average)</li>
+                </ul>
+                <button class="btn btn-outline-brand btn-sm" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#studi-mytruck" aria-expanded="false" aria-controls="studi-mytruck">
+                  <i class="bi bi-journal-text me-1"></i> Baca studi kasus
+                </button>
+                <div class="collapse" id="studi-mytruck">
+                  <div class="case-study mt-3">
+                    <h4>Masalah</h4>
+                    <p>
+                      Penjualan material, sewa alat, kontrak armada, dan keuangan dicatat terpisah di Excel,
+                      sehingga sulit mengetahui laba tiap lini usaha dan posisi piutang secara cepat.
+                    </p>
+                    <h4>Peran saya</h4>
+                    <p>
+                      Menggali kebutuhan, merancang database dan hak akses, membangun seluruh modul,
+                      lalu menjalankan UAT bersama pengguna bisnis dan menyempurnakan fitur dari masukan mereka.
+                    </p>
+                    <h4>Tantangan teknis</h4>
+                    <ul>
+                      <li><strong>Penomoran jurnal</strong> yang berhenti di 1.000 transaksi per PT per bulan — ditelusuri dan diperbaiki agar tanpa batas.</li>
+                      <li><strong>Pembatalan (void) transaksi</strong> harus merambat: jurnal pembelian yang dibatalkan ikut mengembalikan stok material.</li>
+                      <li><strong>Isolasi data antar PT</strong> pada query laporan, sekaligus mempercepat laporan dengan membatasi data yang dipindai.</li>
+                      <li><strong>Hak akses laporan</strong> yang ternyata belum dicek — ditemukan, diperbaiki, lalu modul lain disisir untuk pola serupa.</li>
+                    </ul>
+                    <p class="note-private mb-0">
+                      <i class="bi bi-lock me-1"></i> Kode sumber milik perusahaan. Tangkapan layar menggunakan data contoh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 2: LMS (tanpa gambar) -->
+        <article class="card-soft project">
+          <div class="p-4 p-lg-5">
+            <div class="project-label mb-1">Pekerjaan · Sapphire Group · Agu 2026 – sekarang</div>
+            <h3 class="mb-2">Learning Management System (LMS) Internal</h3>
+            <p class="text-muted">
+              Platform pelatihan karyawan yang tersusun atas program, modul, dan tugas —
+              <strong>sudah berjalan dan digunakan sekitar 150 karyawan</strong>.
+            </p>
+            <div class="mb-3">
+              <span class="chip">Laravel</span>
+              <span class="chip">Filament</span>
+              <span class="chip">MySQL</span>
+              <span class="chip chip-strong">Live</span>
+            </div>
+            <ul class="mb-0">
+              <li>Struktur materi bertingkat: program → modul → tugas</li>
+              <li>Dashboard hasil pelatihan agar manajemen dapat memantau progres dan capaian tiap karyawan</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Proyek 3: Inoutlab -->
+        <article class="card-soft project">
+          <div class="row g-0">
+            <div class="col-lg-5 project-media">
+              <img class="project-shot" src="assets/img/inoutlab.png" loading="lazy"
+                   alt="Landing page Inoutlab: denah rumah interaktif dengan titik ruangan yang bisa diklik"
+                   onerror="this.onerror=null;this.src='assets/img/placeholder-proyek.svg'">
+            </div>
+            <div class="col-lg-7">
+              <div class="p-4 p-lg-5">
+                <div class="project-label mb-1">Proyek Pribadi · Studio Desain Interior</div>
+                <h3 class="mb-2">Inoutlab — Sistem Alur Kerja Studio Interior</h3>
+                <p class="text-muted">
+                  Mengelola seluruh alur kerja studio desain interior dalam satu aplikasi:
+                  calon klien → klien → proyek → RAB → tanda tangan online → invoice → kwitansi,
+                  dilengkapi landing page publik.
+                </p>
+                <div class="mb-3">
+                  <span class="chip">Laravel 12</span>
+                  <span class="chip">Filament 5</span>
+                  <span class="chip">Tailwind CSS 4</span>
+                  <span class="chip">Alpine.js</span>
+                  <span class="chip">MySQL</span>
+                  <span class="chip">GitHub Actions</span>
+                </div>
+                <ul class="mb-3">
+                  <li>Landing page interaktif berbentuk denah rumah: arahkan kursor ke tiap ruangan untuk melihat ide, klik untuk membuka layanannya</li>
+                  <li>RAB dengan riwayat revisi; harga diambil dari master item lalu dikunci, sehingga perubahan harga tidak mengubah RAB lama</li>
+                  <li>Tanda tangan online oleh klien lewat link bertoken tanpa perlu login</li>
+                  <li>Dokumen siap cetak: RAB, SPK, invoice, dan kwitansi, dengan rencana pembayaran per termin</li>
+                  <li>Deploy otomatis ke server production setiap kali kode di-push</li>
+                </ul>
+                <div class="d-flex flex-wrap gap-2 mb-1">
+                  <a class="btn btn-brand btn-sm" href="https://inout.findydigitalkreatif.com" target="_blank" rel="noopener">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Lihat situs
+                  </a>
+                  <button class="btn btn-outline-brand btn-sm" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#studi-inoutlab" aria-expanded="false" aria-controls="studi-inoutlab">
+                    <i class="bi bi-journal-text me-1"></i> Baca studi kasus
+                  </button>
+                </div>
+                <div class="collapse" id="studi-inoutlab">
+                  <div class="case-study mt-3">
+                    <h4>Keputusan teknis</h4>
+                    <ul>
+                      <li><strong>Uang disimpan sebagai rupiah bulat (integer)</strong>, bukan desimal, agar tidak ada selisih pembulatan. Termin terakhir menyerap sisa pembagian sehingga total termin selalu sama dengan nilai kontrak.</li>
+                      <li><strong>Nomor dokumen dibuat dengan row lock</strong>, sehingga invoice atau kwitansi tidak bernomor ganda walau dua admin menyimpan bersamaan.</li>
+                      <li><strong>Otorisasi per objek</strong>: setiap halaman pratinjau dokumen dicek dengan policy, foto KTP klien disimpan di penyimpanan privat, dan HPP hanya terlihat oleh Super Admin.</li>
+                      <li><strong>Endpoint tanda tangan publik dibatasi</strong> (rate limit) untuk mencegah percobaan token secara massal.</li>
+                    </ul>
+                    <p class="note-private mb-0">
+                      <i class="bi bi-lock me-1"></i> Panel admin dan kode sumber bersifat privat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 4: Tugas Akhir -->
+        <article class="card-soft project">
+          <div class="row g-0">
+            <div class="col-lg-5 project-media">
+              <img class="project-shot" src="assets/img/pengaduan.png" loading="lazy"
+                   alt="Dashboard admin SIPLAPOR dengan data contoh"
+                   onerror="this.onerror=null;this.src='assets/img/placeholder-proyek.svg'">
+            </div>
+            <div class="col-lg-7">
+              <div class="p-4 p-lg-5">
+                <div class="project-label mb-1">Tugas Akhir · Polrestabes Semarang · Jan – Mei 2025</div>
+                <h3 class="mb-2">SIPLAPOR — Aplikasi Pengaduan Masyarakat</h3>
+                <p class="text-muted">
+                  Menggantikan pengaduan manual lewat surat dengan aplikasi web untuk memperbaiki
+                  komunikasi antara polisi dan masyarakat. Setiap laporan dapat dilacak dari pengiriman
+                  hingga hasil penyelidikan.
+                </p>
+                <div class="mb-3">
+                  <span class="chip">Laravel</span>
+                  <span class="chip">AdminLTE</span>
+                  <span class="chip">MySQL</span>
+                  <span class="chip">ICONIX</span>
+                </div>
+                <ul class="mb-3">
+                  <li>Kebutuhan digali langsung dari pemangku kepentingan kepolisian dan dimodelkan dengan proses ICONIX</li>
+                  <li>Antarmuka terpisah untuk masyarakat dan petugas: Pengawas, Kapolrestabes, Divisi, dan Admin</li>
+                  <li>Alur status: diverifikasi → diterima/ditolak → disposisi → diproses → selesai</li>
+                  <li>Nomor laporan unik, unggah bukti, dan notifikasi di setiap perubahan status</li>
+                </ul>
+                <button class="btn btn-outline-brand btn-sm" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#studi-pengaduan" aria-expanded="false" aria-controls="studi-pengaduan">
+                  <i class="bi bi-journal-text me-1"></i> Baca studi kasus
+                </button>
+                <div class="collapse" id="studi-pengaduan">
+                  <div class="case-study mt-3">
+                    <h4>Masalah</h4>
+                    <p>
+                      Pengaduan lewat surat sulit dilacak: masyarakat tidak tahu perkembangan laporannya,
+                      dan pimpinan sulit memantau laporan yang belum ditangani.
+                    </p>
+                    <h4>Solusi</h4>
+                    <p>
+                      Alur kerja digital sesuai proses di instansi: pengawas memverifikasi, Kapolrestabes
+                      mendisposisikan ke divisi berwenang, lalu divisi mencatat penyelidikan dan hasilnya.
+                      Akses tiap halaman dibatasi dengan middleware per peran.
+                    </p>
+                    <h4>Yang akan saya tingkatkan</h4>
+                    <p class="mb-0">
+                      Otorisasi per data (masyarakat hanya melihat laporannya sendiri, divisi hanya laporan
+                      yang didisposisikan kepadanya), penyimpanan bukti secara privat, dan log aktivitas —
+                      karena data pengaduan bersifat sensitif.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyek 5: Psikotes (tanpa gambar) -->
+        <article class="card-soft project">
+          <div class="p-4 p-lg-5">
+            <div class="project-label mb-1">Magang · Biro Psikologi Poros Semarang · Jan – Apr 2024</div>
+            <h3 class="mb-2">Aplikasi Tes Psikologi Berbasis Web</h3>
+            <p class="text-muted">
+              Memungkinkan biro menyelenggarakan tes psikologi secara daring dan menghasilkan
+              laporan hasil tes secara otomatis.
+            </p>
+            <div class="mb-3">
+              <span class="chip">Laravel</span>
+              <span class="chip">MySQL</span>
+            </div>
+            <p class="note-private mb-0">
+              <i class="bi bi-lock me-1"></i> Milik Biro Psikologi Poros. Data peserta bersifat rahasia dan tidak ditampilkan.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PENGALAMAN ============ -->
+    <section id="pengalaman" class="pt-0">
+      <div class="container">
+        <h2 class="section-title mb-4">Pengalaman &amp; Pendidikan</h2>
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="period">Okt 2025 — Sekarang</div>
+                <h3 class="h5 fw-bold mb-1">IT Staff · Sapphire Group</h3>
+                <p class="text-muted mb-2">Properti · Tegal, Jawa Tengah</p>
+                <ul class="text-muted mb-0 ps-3">
+                  <li>PIC sistem internal: menggali kebutuhan, membangun, melatih pengguna, dan dukungan pasca-rilis</li>
+                  <li>Membangun MY-TRUCK dan LMS internal (Laravel &amp; Filament)</li>
+                  <li>Membangun sistem SOP Engineering (penerbitan SPMK, pelacakan SLA, monitoring progres konstruksi) dengan Google Sheets &amp; Apps Script</li>
+                  <li>Memantau input data pada sistem SOP Marketing, Likuiditas (Keuangan), dan Engineering, lalu menelusuri masalah dan merilis perbaikan</li>
+                  <li>Sedang membangun sistem terintegrasi pabrik kayu yang menghubungkan 7 proses: Marketing, Sales Order, Gudang, Produksi, Logistik, Pembelian, dan Keuangan</li>
+                </ul>
+              </div>
+              <div class="timeline-item">
+                <div class="period">Jan 2025 — Mei 2025</div>
+                <h3 class="h5 fw-bold mb-1">Web Developer (Tugas Akhir) · Polrestabes Semarang</h3>
+                <p class="mb-0 text-muted">Membangun aplikasi pengaduan masyarakat dengan Laravel dan MySQL.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="period">Jan 2024 — Apr 2024</div>
+                <h3 class="h5 fw-bold mb-1">Web Developer (Magang) · Biro Psikologi Poros Semarang</h3>
+                <p class="mb-0 text-muted">Membangun aplikasi tes psikologi daring dengan laporan hasil otomatis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="card-soft p-4 mb-3">
+              <div class="period small text-muted fw-semibold">Agu 2021 — Jul 2025</div>
+              <h3 class="h5 fw-bold mb-1">S1 Informatika · Universitas Diponegoro</h3>
+              <p class="mb-2 text-muted">IPK 3,56</p>
+              <p class="mb-0 small text-muted">
+                Tugas akhir: Aplikasi Pengaduan Masyarakat Berbasis Web untuk Polrestabes Semarang
+                menggunakan Proses ICONIX.
+              </p>
+            </div>
+            <div class="card-soft p-4">
+              <h3 class="h6 fw-bold mb-2"><i class="bi bi-award me-1"></i>Sertifikasi</h3>
+              <ul class="mb-0 ps-3 small text-muted">
+                <li>Database Programming with PL/SQL — Oracle Academy</li>
+                <li>Java Programming — Oracle Academy (2023)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAK ============ -->
+    <section id="kontak" class="contact">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title mb-2">Mari terhubung</h2>
+            <p class="section-subtitle mb-0">Terbuka untuk posisi Frontend / Web Developer.</p>
+          </div>
+          <div class="col-lg-6">
+            <ul class="list-unstyled mb-0 d-grid gap-3">
+              <li><i class="bi bi-envelope me-2"></i><a class="contact-link" href="mailto:harianjaivann@gmail.com">harianjaivann@gmail.com</a></li>
+              <li><i class="bi bi-whatsapp me-2"></i><a class="contact-link" href="https://wa.me/6282167401147" target="_blank" rel="noopener">+62 821-6740-1147</a></li>
+              <li><i class="bi bi-linkedin me-2"></i><a class="contact-link" href="https://www.linkedin.com/in/ivan-harianja" target="_blank" rel="noopener">linkedin.com/in/ivan-harianja</a></li>
+              <li><i class="bi bi-github me-2"></i><a class="contact-link" href="https://github.com/IvanSHarianja" target="_blank" rel="noopener">github.com/IvanSHarianja</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4">
+    <div class="container text-center">
+      © 2026 Ivan S. Harianja · Dibangun dengan HTML &amp; Bootstrap 5
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Tutup menu mobile setelah salah satu link diklik.
+    document.querySelectorAll('#menu .nav-link, #menu .btn').forEach((link) => {
+      link.addEventListener('click', () => {
+        const menu = bootstrap.Collapse.getInstance(document.getElementById('menu'))
+        if (menu) menu.hide()
+      })
+    })
+  </script>
+</body>
+</html>

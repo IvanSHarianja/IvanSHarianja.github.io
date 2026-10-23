@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Tangkapan layar menyusul">
+  <rect width="800" height="500" fill="#f1f5f9"/>
+  <rect x="60" y="60" width="680" height="380" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+  <rect x="60" y="60" width="680" height="44" rx="14" fill="#e2e8f0"/>
+  <circle cx="90" cy="82" r="7" fill="#cbd5e1"/>
+  <circle cx="114" cy="82" r="7" fill="#cbd5e1"/>
+  <circle cx="138" cy="82" r="7" fill="#cbd5e1"/>
+  <text x="400" y="285" text-anchor="middle" font-family="system-ui, sans-serif" font-size="26" fill="#94a3b8">Tangkapan layar menyusul</text>
+</svg>
